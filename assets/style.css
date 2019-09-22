@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Condensed:400,700&display=swap');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Saira Condensed', sans-serif;
+  color: #505962;
+}
+
+/* Navigation */
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  /* !important will override fixed.css */
+  background-color: rgba(0, 0, 0, 0.6)!important;
+}
+
+.navbar-nav li {
+  padding-right: .7rem;
+}
+
+/*changes navbar text to white*/
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+/*when links are hovered over, the color changes*/
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fad646;
+}
+
+/* start of the landing page */
+
+/*add background image into landing page - image from Unsplash */
+.home-inner {
+  background-image: url(./images/computer.jpeg);
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  /*this will center the caption within the background image*/
+  top: 38%;
+  /*will always display the text caption on top of the background image*/
+  z-index: 1;
+  color: #fad646;
+  text-transform: uppercase;
+}
+
+.caption h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  /*.1rem horizontal .1rem vertical .8rem blur radius*/
+  text-shadow: .1rem .1rem .8rem black;
+  /*adds spacing under h1*/
+  padding-bottom: .8rem;
+}
+
+.caption h3 {
+  font-size: 2.5rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: .8rem;
+}
+
+.btn-lg {
+  border-width: medium;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+h3.heading {
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.portfolio h3 {
+  font-size: 2rem
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+
+h2.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+p.section-description {
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #808080;
+}
+
+
+/*============= COURSE SECTION =============*/
+
+/*.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+    font-size: 2.4rem;
+  }
+.btn-secondary {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  border-color: #1EBBA3;
+  background-color: #1EBBA3;
+  color: white;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  border-color: #189582;
+  background-color: #189582;
+  color: white;
+}*/
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
